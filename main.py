@@ -11,6 +11,8 @@ import extract_news
 
 import webserver
 
+print("Starting kudasai bot")
+
 load_dotenv() #Extrats the environment variables
 
 # Load the Discord bot token from environment variables
