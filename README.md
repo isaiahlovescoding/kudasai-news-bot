@@ -2,6 +2,8 @@
 
 Este repositorio contiene un bot de Discord que publica diariamente las noticias de anime extraídas de SomosKudasai usando request y BeautifulSoup. Es un proyecto de código abierto, desarrollado por fans para fans, sin ánimo de lucro.
 
+![image alt](https://github.com/isaiahlovescoding/kudasai-news-bot/blob/main/kudasai-bot-image.png?raw=true)
+
 ---
 
 ## 📋 Descripción
@@ -92,6 +94,9 @@ No tiene de fans para fans, puedes hacer lo que quieras (legalmente)
 ## ⚠️ Aviso Legal / Disclaimer
 
 Este bot y su código son **un proyecto fan-made**, desarrollado únicamente con fines educativos y de entretenimiento, sin ánimo de lucro. No estamos afiliados, respaldados ni patrocinados por **SomosKudasai** o ninguna otra entidad. Todos los contenidos enlazados (noticias, imágenes, textos) son propiedad de sus respectivos autores y sitios web de origen.
+
+![image alt](https://github.com/isaiahlovescoding/kudasai-news-bot/blob/main/kudasai.jpg?raw=true)
+
 
 Siempre respeta los términos de uso de *SomosKudasai* y utiliza este bot de manera responsable y ética.
 
