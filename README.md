@@ -2,7 +2,7 @@
 
 Este repositorio contiene (EL CODIGO PARA) un bot de Discord que publica diariamente las noticias de anime extraídas de SomosKudasai usando request y BeautifulSoup. Es un proyecto de código abierto, desarrollado por fans para fans, sin ánimo de lucro.
 
-RECUERDA: Es el codigo para implementar tu mismo un bot desde las discord dev tools, no lo encontraras en ninguna pagina para invitar bots (Quizas en un futuro lo haga :) )
+RECUERDA: Es el codigo para implementar tu mismo un bot desde las discord dev tools, no lo encontraras en ninguna pagina para invitar bots (Quizas en un futuro lo haga :)  )
 
 ![image alt](https://github.com/isaiahlovescoding/kudasai-news-bot/blob/main/kudasai-bot-image.png?raw=true)
 
@@ -28,7 +28,7 @@ RECUERDA: Es el codigo para implementar tu mismo un bot desde las discord dev to
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/kudasai-bot.git
+   git clone https://github.com/tu-usuario/https://github.com/isaiahlovescoding/kudasai-news-bot
    cd kudasai-bot
    ```
 
@@ -53,9 +53,6 @@ RECUERDA: Es el codigo para implementar tu mismo un bot desde las discord dev to
    # Token de tu bot de Discord
    DISCORD_TOKEN=tu_token_aquí
 
-   # (Opcional) Clave de API para servicios de noticias
-   NEWS_API_KEY=tu_api_key
-   ```
 
 2. Asegúrate de no subir nunca tu `.env` al repositorio. Está incluido en `.gitignore`.
 
@@ -89,7 +86,7 @@ Las aportaciones son bienvenidas. Si quieres colaborar:
 
 ## 📜 Licencia
 
-No tiene de fans para fans, puedes hacer lo que quieras (legalmente)
+No tiene, de fans para fans, puedes hacer lo que quieras (legalmente)
 
 ---
 
