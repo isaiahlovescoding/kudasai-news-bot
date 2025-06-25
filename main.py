@@ -31,19 +31,16 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 # --- SCHEDULED TASK -------------------------------------------------------
 
 # Set the hour and minute for the daily news post (24-hour format)
-RUN_HOUR = 14    
-RUN_MINUTE = 15 
+RUN_HOUR = 21
+RUN_MINUTE = 40
 
 @tasks.loop(hours=24)
 async def daily_news():
 
-    print("Starting kudasai bot 3")
-
-
     """
     Scheduled task: Fetches and posts the latest Kudasai news links to a Discord channel once per day.
     """
-    channel = bot.get_channel(853488653329498113)  # Replace with your channel ID
+    channel = bot.get_channel(984254611391127632)  # Replace with your channel ID
     if channel is None:
         logging.error("Channel not found; daily_news task exiting.")
         return
@@ -63,8 +60,6 @@ async def daily_news():
 
 @daily_news.before_loop
 async def before_daily_news():
-
-    print("Starting kudasai bot 1")
 
     """
     Waits until the bot is ready, then sleeps until the next scheduled run time.

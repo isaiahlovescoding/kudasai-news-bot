@@ -1,11 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-#https://somoskudasai.com/noticias/ here you can find the news in general
-
+# URL for general news
 base_url = 'https://somoskudasai.com/noticias/'
-
-#You can modify the limit if you want but i think 5 news per day is good
 
 def get_all_news_kudasai(base_url, limit=5):
     """
@@ -27,24 +24,20 @@ def get_all_news_kudasai(base_url, limit=5):
 
     # 3. Locate all <a> tags with the exact class attribute
     selector = 'a.py-1.hover\\:text-tone.hover\\:underline'
-    # Note: in CSS selector, colons and other special chars must be escaped with a backslash
-
     anchors = soup.select(selector)
 
-    # 4. Extract the href attributes
-    links = [a.get('href') for a in anchors if a.get('href')]
+    # 4. Extract the href attributes, filter out None and non-string values
+    links = []
+    for a in anchors:
+        href = a.get('href')
+        if isinstance(href, str) and href.startswith('http'):
+            links.append(href)
 
-    # 5. Return only the first `limit` links
-    return links[:limit][::-1] #I reversed the list so it starts with the latest news this is important to main.py
-
+    # 5. Return only the first `limit` links, reversed for latest news first
+    return links[:limit][::-1]
 
 news_links = get_all_news_kudasai(base_url)
 
-
-#if you want to see the news links and the list the function got then uncomment the next lines
-
+# Uncomment to debug:
 # for idx, link in enumerate(news_links, start=1):
 #     print(f"{idx}. {link}")
-#     print(news_links)
-
-# This MIGHT be ai slop, if you can improve it that would make you a first class coder!
