@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 
 import extract_news
 
+import webserver
+
 load_dotenv() #Extrats the environment variables
 
 # Load the Discord bot token from environment variables
@@ -21,6 +23,8 @@ intents.messages = True              # Enable message events
 
 # Create the bot instance with command prefix and intents
 bot = commands.Bot(command_prefix='!', intents=intents)
+
+
 
 # --- SCHEDULED TASK -------------------------------------------------------
 
@@ -83,5 +87,7 @@ async def on_ready():
 # --- RUN ------------------------------------------------------------------
 
 if __name__ == '__main__':
+    webserver.keep_alive()
     # Start the bot and begin processing events
     bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+
