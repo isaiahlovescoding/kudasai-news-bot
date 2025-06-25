@@ -1,0 +1,6 @@
+discord.py
+python-dotenv
+requests
+beautifulsoup4
+
+#misi es tonto y mas tonto es carface (te amo bouni)
