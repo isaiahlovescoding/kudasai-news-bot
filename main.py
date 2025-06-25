@@ -29,8 +29,8 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 # --- SCHEDULED TASK -------------------------------------------------------
 
 # Set the hour and minute for the daily news post (24-hour format)
-RUN_HOUR = 15    # 11 AM
-RUN_MINUTE = 00  # :50
+RUN_HOUR = 20    # 20 PM
+RUN_MINUTE = 30  # :30
 
 @tasks.loop(hours=24)
 async def daily_news():
