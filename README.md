@@ -52,7 +52,12 @@ RECUERDA: Es el codigo para implementar tu mismo un bot desde las discord dev to
    ```ini
    # Token de tu bot de Discord
    DISCORD_TOKEN=tu_token_aquí
+   
+2. Cambia el id del canal en el que quieres que aparezcan las noticias
 
+   ```ini
+   channel = bot.get_channel(EL ID de tu canal  (Lo encuentras en el url: https://discord.com/channels/id/id_de_tu_canal )  )  # Replace with your channel ID
+   
 
 2. Asegúrate de no subir nunca tu `.env` al repositorio. Está incluido en `.gitignore`.
 
